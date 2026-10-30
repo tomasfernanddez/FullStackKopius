@@ -1,0 +1,21 @@
+{
+  "name": "clase-02-bases",
+  "version": "1.0.0",
+  "description": "Mi primera aplicación con Node.js",
+  "homepage": "https://github.com/tomasfernanddez/FullStackKopius/tree/main#readme",
+  "bugs": {
+    "url": "https://github.com/tomasfernanddez/FullStackKopius/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomasfernanddez/FullStackKopius.git#main"
+  },
+  "license": "ISC",
+  "author": "Tomas Fernandez",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
