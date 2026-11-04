@@ -1,9 +1,10 @@
-import { generateId } from "../adapters/id.adapter.js";
-import { calculateAge } from "../adapters/age.adapter.js";
+const makePerson = ({ generateId, calculateAge }) => {
+  return (name, birthdate) => ({
+    uid: generateId(),
+    name,
+    birthdate,
+    age: calculateAge(birthdate),
+  });
+};
 
-export const createPerson = (name, birthdate) => ({
-  id: generateId(),
-  name,
-  birthdate,
-  age: calculateAge(birthdate),
-});
+export default makePerson;

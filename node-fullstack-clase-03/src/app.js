@@ -19,8 +19,12 @@
 
 
 // Tarea 005
+import { generateId } from "../src/adapters/id.adapter.js";
+import { calculateAge } from "../src/adapters/age.adapter.js";
 
-import { createPerson } from "./factories/person.factory.js"
+import makePerson from "./factories/person.factory.js"
+
+const createPerson = makePerson({ generateId, calculateAge });
 
 const people = [
     createPerson("John Doe", "2000-05-15"),
