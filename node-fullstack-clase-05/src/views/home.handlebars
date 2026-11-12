@@ -1,0 +1,13 @@
+<section id="banner" class="bg-img" data-bg="banner.jpg">
+	<div class="inner">
+		<header>
+			<h1>{{site.name}}</h1>
+			<p>{{site.tagline}}</p>
+		</header>
+	</div>
+	<a href="#post-0" class="more">Ver posts</a>
+</section>
+
+{{#each posts}}
+	{{> post-card post=this index=@index}}
+{{/each}}

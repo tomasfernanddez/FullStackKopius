@@ -1,0 +1,23 @@
+{{#if contact.sent}}
+	<p class="contact-success">¡Gracias! Recibimos tu mensaje.</p>
+{{/if}}
+
+<form action="/contact#contact" method="post">
+	<div class="field half first">
+		<label for="name">Nombre</label>
+		<input id="name" name="name" type="text" placeholder="Nombre" value="{{contact.name}}" required />
+	</div>
+	<!-- email y message igual -->
+
+	{{#if contact.errors.length}}
+		<ul class="error-list">
+			{{#each contact.errors}}
+				<li>{{this}}</li>
+			{{/each}}
+		</ul>
+	{{/if}}
+
+	<ul class="actions">
+		<li><input value="Enviar" class="button alt" type="submit" /></li>
+	</ul>
+</form>

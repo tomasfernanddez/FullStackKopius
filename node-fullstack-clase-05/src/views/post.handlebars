@@ -1,0 +1,18 @@
+<section id="post" class="wrapper bg-img" data-bg="{{post.image}}">
+	<div class="inner">
+		<article class="box">
+			<header>
+				<h2>{{post.title}}</h2>
+				<p>{{formatDate post.date}}</p>
+			</header>
+			<div class="content">
+				{{#each post.body}}
+					<p>{{this}}</p>
+				{{/each}}
+			</div>
+			<footer>
+				<a href="/" class="button alt">Volver al inicio</a>
+			</footer>
+		</article>
+	</div>
+</section>

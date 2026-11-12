@@ -1,0 +1,22 @@
+{
+  "name": "fullstack-clase-05",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "express": "^5.3.0",
+    "express-handlebars": "^9.0.4"
+  },
+  "engines": {
+    "node": ">=22.23.4"
+  }
+}
